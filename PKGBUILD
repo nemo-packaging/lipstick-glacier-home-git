@@ -2,9 +2,8 @@
 # Contributor: Alexey Andreyev <aa13q@ya.ru>
 # Maintainer: James Kittsmiller (AJSlye) <james@nulogicsystems.com>
 
-pkgname=qt5-lipstick-glacier-home-git
+pkgname=lipstick-glacier-home-git
 _host="gitlab.com"
-_srcname=qt5-lipstick-glacier-home
 _project=neochapay # github nemomobile-ux/glacier-home fork
 _branch=Qt59
 pkgver=r267.8a72bc1
@@ -16,8 +15,8 @@ license=('BSD')
 depends=('qt5-base' 'nemo-qml-plugin-contextkit-git' 'libconnman-qt-git')
 makedepends=('git' 'qt5-lipstick-git') #TODO
 optdepends=()
-provides=("${_srcname}")
-conflicts=()
+provides=("${pkgname%-git}")
+conflicts=("${pkgname%-git}")
 source=("${pkgname}::git+${url}")
 sha256sums=('SKIP')
 
