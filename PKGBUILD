@@ -11,7 +11,7 @@ pkgrel=1
 pkgdesc="A nice homescreen for Glacier experience"
 arch=('x86_64' 'aarch64')
 url="https://$_host/$_project/glacier-home#branch=$_branch"
-license=('BSD')
+license=('BSD-3-Clause AND MIT')
 depends=('qt5-base' 'nemo-qml-plugin-contextkit-git' 'qt5-connman-git')
 makedepends=('git' 'qt5-lipstick-git') #TODO
 optdepends=()
